@@ -1,3 +1,9 @@
 boto3
 awscli
 pillow
+pypdf 
+langchain
+streamlit 
+faiss-cpu
+langchain-community
+langchain-aws
