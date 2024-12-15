@@ -1,8 +1,8 @@
 import boto3
 import json
 
-prompt_data = """
-Act as a Shakespeare and write a poem on Generative AI.
+prompt_data="""
+Be Shakespeare and write a 3 line poem on Genertaive AI
 """
 
 # Initialize the Bedrock client with the correct region
