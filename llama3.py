@@ -1,12 +1,18 @@
 import boto3
 import json
 
-prompt_data="""
-Be Shakespeare and write a 3 line poem on Genertaive AI
-"""
-
 # Initialize the Bedrock client with the correct region
 bedrock = boto3.client(service_name="bedrock-runtime", region_name="us-east-2")
+
+def get_user_input():
+    """
+    Prompt the user for input.
+    """
+    prompt_data = input("Enter the prompt for the AI model: ")
+    return prompt_data
+
+# Get dynamic input from the user
+prompt_data = get_user_input()
 
 # Prepare the payload
 payload = {
@@ -37,6 +43,7 @@ try:
     # Extract the generated text (check for potential keys)
     response_text = response_body.get('generation') or response_body.get('outputs') or response_body.get('completions', 'No generation returned')
 
+    print("\nGenerated Response:")
     print(response_text)
 
 except Exception as e:

@@ -3,10 +3,21 @@ import json
 import base64
 import os
 
-prompt_data = """
-provide me an 4k hd image of a beach, also use a blue sky rainy season and
-cinematic display
-"""
+#prompt_data = """
+#provide me an 4k hd image of a beach, also use a blue sky rainy season and
+#cinematic display
+#"""
+
+def get_user_input():
+    """
+    Prompt the user for input.
+    """
+    prompt_data = input("Enter the prompt for the AI model: ")
+    return prompt_data
+
+prompt_data = get_user_input()
+
+
 prompt_template=[{"text":prompt_data,"weight":1}]
 bedrock = boto3.client(service_name="bedrock-runtime")
 payload = {
@@ -34,7 +45,6 @@ artifact = response_body.get("artifacts")[0]
 image_encoded = artifact.get("base64").encode("utf-8")
 image_bytes = base64.b64decode(image_encoded)
 
-# Save image to a file in the output directory.
 output_dir = "output"
 os.makedirs(output_dir, exist_ok=True)
 file_name = f"{output_dir}/generated-img.png"
