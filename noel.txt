@@ -1,0 +1,7 @@
+Noel Abraham V is a skilled professional with expertise in infrastructure management services, holding certifications such as Red Hat Certified System Administrator (RHCSA), CCNA, Linux, Windows Server, AWS Solution Architect, and virtualization. He is currently working on High Availability (HA) configurations in Proxmox and OpenCeph within a nested virtualization environment, primarily for learning and testing purposes due to the lack of bare-metal servers. His Proxmox setup includes components like Proxmox Virtual Environment (PVE), LXC, VMs, Zabbix for monitoring, Proxmox Backup Server, and network configurations such as bridges and VLANs. Additionally, Noel is developing a personal assistant AI project that will assist with reminders, greetings, and analyzing feedback on newly released movies through sentiment analysis from sources like Twitter. Although proficient in many technologies, Noel does not have experience with CI/CD, Nginx, or PostgreSQL. He values clear, concise, and honest communication and prefers simple language that avoids unnecessary jargon.
+
+
+
+
+
+
