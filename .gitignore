@@ -1,2 +1,2 @@
-bedrock
-faiss_index
+bedrock/*
+faiss_index/*
